@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(198, 241, 227);
+}
+#game
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+#game .but{
+    border-radius: 5px;
+    border: black 2px solid;
+    padding: 5px;
+    background-color: rgb(42, 171, 129);
+}
+#game .but:hover{
+    cursor: pointer;
+    background-color: rgb(153, 230, 205);
+}
+#container
+{
+    border-radius: 20px;
+    background-color: white;
+    width: 80%;
+    height: 90%;
+    overflow: hidden;
+}
+#nav
+{
+    background-color: rgb(71, 210, 164);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+}
+.ElemText{
+    color: white;
+    font-weight: 700;
+    font-size: 5vh;
+}
+.navBox
+{
+    border: black 2px solid;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: black;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vh;
+    border-radius: 5px;
+    background-color: white;
+}
+#bubContainer
+{
+    background-color: rgb(242, 252, 249);
+    /* #calc() function allows you to take difference between different size types */
+    height: calc(100% - 50px);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* wrap dile next line e chole asbe */
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.bubble
+{
+    background-color: rgb(107, 219, 182);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border-radius: 50%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.bubble:hover
+{
+    cursor: pointer;
+    background-color: rgb(36, 148, 112);
+}
+

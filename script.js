@@ -46,14 +46,22 @@ document.querySelector("#start").addEventListener("click", () => {
     if(timeRun)
     {
         alert(`Score: ${score}`);
+        timeRun=false;
     }
+    if(!timeRun)
+    {
     time = 60;
     score = 0;
+    document.querySelector("#score").textContent = score;
+    clearInterval(timeInt);
+    hitGenerator("X");
+    document.querySelector("#timer").textContent = time;
     bubGenerator();
     startTimer();
     timeRun = true;
     hitGenerator(Math.floor(Math.random() * 10) + 1);
     check();
+    }
 });
 document.querySelector("#pause").addEventListener("click", () => {
     timeRun = false;
